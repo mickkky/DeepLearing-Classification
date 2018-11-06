@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 import Augmentor
 # 1. set dataset directory
-p = Augmentor.Pipeline("directory/to/your/dataset")
+p = Augmentor.Pipeline("E:\PycharmProjects\PHI Challenge 2018\Task7\dataset\Heavy damage")
 
 # 2. augment options
 # Rotate
