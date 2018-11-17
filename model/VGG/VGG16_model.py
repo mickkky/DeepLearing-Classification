@@ -10,7 +10,6 @@ class vgg16:
         self.class_number = class_number
         self.convlayers()
         self.fc_layers(keep_prob)
-
         self.probs = self.fc8
 
     def saver(self):
@@ -92,4 +91,4 @@ class vgg16:
         for i, k in enumerate(keys):
             if i not in [30,31]:
                 sess.run(self.parameters[i].assign(weights[k]))
-        print("-----------all done---------------")
+        print("-----------VGG weights loading completed ---------------")

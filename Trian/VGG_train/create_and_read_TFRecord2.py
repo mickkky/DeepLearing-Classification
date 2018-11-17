@@ -18,14 +18,14 @@ def get_file(file_dir):
         n_img = len(os.listdir(one_folder))
         letter = one_folder.split('/')[-1]
 
-#
-        if letter == 'Beam':
+# set class lable
+        if letter == 'Combined type damage':
             labels = np.append(labels, n_img * [0])
-        elif letter == 'Column':
+        elif letter == 'Flexural type damage':
             labels = np.append(labels, n_img * [1])
-        elif letter == 'Else':
+        elif letter == 'No damage':
             labels = np.append(labels, n_img * [3])
-        elif letter == 'Wall':
+        elif letter == 'Shear type damage':
             labels = np.append(labels, n_img * [2])
     # shuffle
     temp = np.array([images, labels])
